@@ -238,3 +238,5 @@ h5 {
     color: black;
     font-size: 30px;
     }
+@media (min-width: 1025px) and (max-width: 1280px)
+{
