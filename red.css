@@ -8,9 +8,9 @@
   border-radius: 50%;
 }
 a:hover {
-	background-color: green;
+	background-color: #00d900;
 	width: 80px;
-	border-radius: 10px;
+	border-radius: 15px;
 	color: black;
 }
 .fa:hover {
