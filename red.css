@@ -20,3 +20,7 @@ a {
 	text-decoration: none;
 	text-decoration-line: none;
 }
+img {
+    width: 10rem;
+    height: 5rem;
+    }
