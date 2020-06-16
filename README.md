@@ -1,1 +1,1 @@
-<script>alert("POGI SI RENZ");</scrip>
+<script>alert("POGI SI RENZ");</script>
