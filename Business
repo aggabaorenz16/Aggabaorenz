@@ -12,11 +12,11 @@
             scroll-behavior: smooth;
         }
         #Area-1 {
-            margin-left: 48rem;
+            margin-left: 45rem;
             color: white;
             font-weight: bold;
             padding: 10px;
-            font-size: 15px;
+            font-size: 18px;
         }
         a {
             text-decoration: none;
@@ -26,13 +26,13 @@
             color: white;
             font-weight: bold;
             padding: 11px;
-            font-size: 15px;
+            font-size: 18px;
         }
         #Area-3 {
             color: white;
             font-weight: bold;
             padding: 11px;
-            font-size: 15px;
+            font-size: 18px;
         }
         #Area-4 {
             color: white;
@@ -40,7 +40,7 @@
             padding: 10px;
             border: 1px solid white;
             border-radius: 20px;
-            font-size: 15px;
+            font-size: 18px;
         }
         .bg-info {
             opacity: 0.7;
@@ -49,20 +49,20 @@
             opacity: 0.5;
         }
         .home > svg {
-            height: 20rem;
-            margin-left: 40rem;
-            margin-top: 3rem;
-            position: relative;
+            height: 25rem;
+            margin-left: 55rem;
+            margin-top: 4rem;
+            width: 300px;
         }
         .Renz > strong {
-top: 15rem;
+top: 20rem;
 margin-left: 5rem;
 position: relative;
 font-family: 'Raleway', sans-serif;
 font-size: 35px;
         }
         .Renz > p {
-top: 15rem;
+top: 20rem;
 margin-left: 148px;
 position: relative;
 font-family: 'Raleway', sans-serif;
@@ -72,7 +72,13 @@ font-size: 25px;
     color: white;
             font-weight: bold;
             padding: 10px;
-            font-size: 15px;
+            font-size: 18px;
+}
+#Area-4:hover {
+    background-color:  white;
+    transition: 1s ease;
+    color: black;
+    opacity: 0.7;
 }
 .text-title > h2 {
     margin-top: 22rem;
@@ -117,6 +123,32 @@ font-size: 25px;
 .card {
     width: 14rem;
 }
+body {
+    padding: 0%;
+    overflow-x: hidden;
+}
+#card:hover{
+   background-color: black;
+   color: white;
+   transition: 1s;
+}
+.arrow > a {
+    margin-top: 20%;
+    background-color: white;
+    color: black;
+    background-size: 50%;
+    font-size: 30px;
+    width: 50px;
+    text-decoration: none;
+    margin-left: 41.5rem;
+}
+.arrow {
+    margin-top: 5%;
+}
+.arrow > p {
+    font-weight: bolder;
+    text-align: center;
+}
     </style>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -127,19 +159,19 @@ font-size: 25px;
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="#Home" id="Area-1">Home</a>
+                  <a class="nav-link" href="#" id="Area-1">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#Product" id="Area-6">Product</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#Blog" id="Area-2">Blog</a>
+                  <a class="nav-link" href="#Team" id="Area-2">Team</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#Features" id="Area-3">Features</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#FAQ" id="Area-3">FAQ&nbsp;</a>
+                  <a class="nav-link" href="#Faq" id="Area-3">FAQ&nbsp;</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#" id="Area-4">Get&nbsp;Started</a>
@@ -158,13 +190,13 @@ font-size: 25px;
           </div>
           <div class="Product" id="Product">
               <div class="text-title">
-                  <h2>PRODUCT</h2>
+                  <h2 style="margin-left: 3rem;">PRODUCT</h2>
                   <br>
                   <br>
-                  <div class="row">
-                    <div class="col-sm-4">
+                  <div class="row justify-content-center">
+                    <div class="col-xs-2">
                       <div class="card">
-                          <div class="card-top-img">
+                          <div class="card-top-img" style="height: 23rem">
                               <img src="https://cf.shopee.ph/file/582cbca1e330bc493ff2427452d48554" style="margin-left: 45px; width: 150px;">
                         <div class="card-body">
                           <h5 class="card-title" style="margin-left: 1rem;">Original Molten</h5>
@@ -174,24 +206,136 @@ font-size: 25px;
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="card" style="height: 350px;">
+                    <div class="col-xs-2">
+                        <div class="card" style="height: 23rem">
                             <div class="card-top-img">
-                                <img src="https://cdn.pixabay.com/photo/2014/05/02/21/50/home-office-336378_960_720.jpg" style="margin-left: 35px; width: 150px; margin-top: 10px;">
+                                <img src="https://cdn.pixabay.com/photo/2014/05/02/21/50/home-office-336378_960_720.jpg" style="margin-left: 35px; width: 150px; margin-top: 10px; height: 110px;">
                           <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Computer Set</h5>
+                            <h5 class="card-title" style="text-align: center;">Laptop Set</h5>
                           <pre class="card-text" style="text-decoration-line: line-through; font-size: 20px; margin-left: 50px;">&#x20B1;7,900</pre><p style="margin-left: 50px; font-size: 20px;">&#x20B1;7,500</p>
-                            <a href="#" class="btn btn-primary" style="margin-left: 30px; margin-top: 34px;">Add To Cart</a>
+                            <a href="#" class="btn btn-primary" style="margin-left: 30px; margin-top: 30px;">Add To Cart</a>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="col-xs-2">
+                    <div class="card">
+                        <div class="card-top-img" style="height: 23rem">
+                            <img src="https://cdn.runrepeat.com/i/nike/30133/nike-lebron-witness-iii-prm-chaussures-de-basketball-homme-multicolore-white-black-half-blue-000-40-5-eu-multicolore-white-black-half-blue-000-b2fa-600.jpg" style="margin-left: 45px; width: 150px; margin-top: 45px;">
+                      <div class="card-body">
+                        <h5 class="card-title" style="margin-left: 1rem;">Lebron Witness 3</h5>
+                      <p class="card-text" style="font-size: 20px; margin-left: 50px; margin-top: 10px;">&#x20B1;2,500</p>
+                        <a href="#" class="btn btn-primary" style="margin-left: 30px; margin-top: 72px;">Add To Cart</a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-2">
+                      <div class="card">
+                          <div class="card-top-img" style="height: 23rem;">
+                              <img src="https://rukminim1.flixcart.com/image/800/960/jtaed8w0/shoe/q/q/g/stephen-curry-5-sc-7-5-underarmour-ua-c5-black-blue-original-imaf8zn3j3rtspkx.jpeg?q=50" alt="" style="margin-left: 45px; width: 150px; margin-top: 45px;">
+                          <div class="card-body">
+                              <h5 class="card-title" style="margin-left: 1rem;">Under Armour</h5>
+                              <p class="card-text" style="font-size: 20px; margin-left: 50px; margin-top: 20px;">&#x20B1;2,500</p>
+                          <a href="#" class="btn btn-primary" style="margin-left: 33px; margin-top: 40px;">Add To Cart</a>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-2">
+                      <div class="card">
+                          <div class="card-top-img" style="height: 23rem;">
+<img src="https://www.remalsales.com/assets/images/condura%20ac%202019/iwrac-2.jpg" alt="" style="margin-left: 45px; width: 150px; margin-top: 0px; height: 12rem;">
+                          <div class="card-body">
+                              <h5 class="card-title" style="margin-left: 1rem;">Condura Aircon</h5>
+                              <p class="card-text" style="font-size: 20px; margin-left: 50px; margin-top: 20px;">&#x20B1;1,500</p>
+                              <a href="#" class="btn btn-primary" style="margin-left: 33px; margin-top: 5px;">Add To Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
                 </div>
 </div>
-<div class="Blog" id="Blog">
+<div class="TEAM" id="Team">
     <div class="text-title-2">
-        <h2>BLOG</h2>
-
+        <h2>TEAM</h2>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card" style="height: 23rem; margin-left: 105px;" id="card" >
+                    <div class="card-top-img">
+                        <img  class="rounded-circle"  src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.0-9/67915659_407153046600545_1546707930487717888_n.jpg?_nc_cat=100&_nc_sid=7aed08&_nc_eui2=AeE4wKH6K54DSuCSlKl1-kbUbvtUJBqFVoxu-1QkGoVWjIabL2rH5cnoTbWBQ2f_or7nOzhlIpiCJf3pd7-rJR4R&_nc_ohc=_wsJab2xwCkAX-yFKYg&_nc_ht=scontent.fmnl4-6.fna&oh=40ca9a011f7b12e542e950b6b6011de0&oe=5F0FA950" style="margin-left: 35px; width: 150px; margin-top: 10px; height:140px;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Developer</h5>
+                  <p class="card-text" style="font-size: 15px; margin-top: 25px; margin-left: 50px;">Renz Aggabao</p>
+                    <a href="https://www.facebook.com/aggabaorenz16/" class="btn btn-primary" style="margin-left: 42px; margin-top: 50px;">Facebook</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row d-flex justify-content-center">
+            <div class="col-xs-2">
+              <div class="card" style="height: 23rem;" id="card">
+                  <div class="card-top-img" style="height: 23rem">
+                      <img  class="rounded-circle"  src="https://scontent.fmnl4-5.fna.fbcdn.net/v/t31.0-8/s960x960/26240730_1663646173695473_7014272650479818712_o.jpg?_nc_cat=111&_nc_sid=7aed08&_nc_eui2=AeFV-Wyl4EV1rj-D9P_NKCxuBRdyvhCC-E4FF3K-EIL4TqNc9mpEm1yYqiQA0zlMySi6L1HkhjiEaOxQn3zTjYve&_nc_ohc=hoW5gUxmVGEAX8aeKDv&_nc_ht=scontent.fmnl4-5.fna&_nc_tp=7&oh=fb8d2189ad85cb98aaff1e0ea0e2fb92&oe=5F0FBE2F" style="margin-left: 45px; width: 150px; height: 9rem; margin-top: 10px;">
+                <div class="card-body">
+                  <h5 class="card-title" style="margin-left: 4rem;">Brother</h5>
+                <p class="card-text" style="font-size: 15px; text-align: center; margin-top: 25px;">Roel Abellanosa Aggabao</p>
+                  <a href="https://www.facebook.com/roel.aggabao" class="btn btn-primary" style="margin-left: 50px; margin-top: 50px;">Facebook</a>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="card" style="height: 23rem" id="card">
+                    <div class="card-top-img">
+                        <img  class="rounded-circle"  src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.0-9/p720x720/31494303_1096820343792048_6806211150435319808_o.jpg?_nc_cat=104&_nc_sid=7aed08&_nc_eui2=AeFFJ-l7AQlDhra8HlXDD_3EQY__YVzP87xBj_9hXM_zvDwVW7xa3axK8uF3nwu2VNnykkxSamGUUfK4oxInEcoB&_nc_ohc=p__gneRLpjgAX-A2nI0&_nc_ht=scontent.fmnl4-1.fna&_nc_tp=6&oh=99941016eb599da8b769b1c5bd5afc21&oe=5F0E70B7" style="margin-left: 35px; width: 150px; margin-top: 10px; height:140px;">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Brother</h5>
+                  <p class="card-text" style="font-size: 15px; margin-top: 25px;">Ian&nbsp;Aggabao&nbsp;Abellanosa</p>
+                    <a href="https://www.facebook.com/ian.aggabao?" class="btn btn-primary" style="margin-left: 42px; margin-top: 50px;">Facebook</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="col-xs-2">
+              <div class="card" style="height: 23rem" id="card">
+                  <div class="card-top-img">
+                      <img  class="rounded-circle" src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.0-9/67246814_406870129932575_4372639520395362304_n.jpg?_nc_cat=107&_nc_sid=7aed08&_nc_eui2=AeF5Pdatx84nqdd9e8ZL6BUF5wx2EzYpkcfnDHYTNimRx92oerUCEi5Bae4h3zZS4M7_m4fHzhJLdVZE1kP-o6hf&_nc_ohc=gaxfPYpqWycAX_06DnJ&_nc_ht=scontent.fmnl4-6.fna&oh=6932ac3b4fdab16f181214a10e0ed26f&oe=5F108473" alt="" style="margin-left: 35px; width: 170px; margin-top: 10px; height:140px;">
+                  <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">Sister</h5>
+                      <p class="card-text" style="font-size: 15px; margin-top: 25px; margin-left: 50px;">Lea Aggabao</p>
+                 <a href="https://www.facebook.com/lea.aggabao.94/" class="btn btn-primary" style="margin-left: 45px; margin-top: 50px;">Facebook</a>
+                    </div>
+                    </div>
+              </div>
+          </div>
+          <div class="col-xs-2">
+              <div class="card" style="height: 23rem" id="card">
+            <div class="card-top-img">
+                <img class="rounded-circle" src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.0-9/18301402_145310042674467_1090639386821688106_n.jpg?_nc_cat=109&_nc_sid=7aed08&_nc_eui2=AeELyul0siJ_7yRBV_yKBuOlV4W7tESb08xXhbu0RJvTzLsb1Hch-XkZ-Pq8NgRypaFuBrxa5xm8OgDxxOlRBnlx&_nc_ohc=m-NMuFtqAwYAX_XIGyx&_nc_ht=scontent.fmnl4-3.fna&oh=0acadfa60e9894af3323d13c588b68de&oe=5F0E9CDF" alt="" style="margin-left: 35px; width: 150px; margin-top: 10px; height:140px;">
+            <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Mother</h5>
+                <p class="card-text" style="font-size: 15px; margin-top: 25px; margin-left: 50px;">Cora Aggabao</p>
+                <a href="https://www.facebook.com/cora.aggabao.16/" class="btn btn-primary" style="margin-left:44px; margin-top: 50px;">Facebook</a>
+            </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-xs-2">
+            <div class="card" style="height: 23rem" id="card">
+                <div class="card-top-img">
+                    <img  class="rounded-circle"  src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t1.0-9/p720x720/64868159_112971096630687_4712086015752273920_o.jpg?_nc_cat=104&_nc_sid=7aed08&_nc_eui2=AeFm4YFudtcRKGODcNmp0GmJGeU7yTJ-QjsZ5TvJMn5CO9qpd9eZc45VlKqTy9zPjaa0LU0D5RMZt5NUgjgWZIMq&_nc_ohc=cNcmPQTS3fIAX8FKGqX&_nc_ht=scontent.fmnl4-1.fna&_nc_tp=6&oh=1aeea6d0c5ee25a610064c37568a9d08&oe=5F0FCDCA" style="margin-left: 35px; width: 150px; margin-top: 10px; height:140px;">
+              <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">Sister</h5>
+              <p class="card-text" style="font-size: 15px; margin-top: 25px; margin-left: 50px;">Claire Aggabao</p>
+                <a href="https://www.facebook.com/klengkleng.oabagga/" class="btn btn-primary" style="margin-left: 42px; margin-top: 50px;">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 </div>
 <div class="Features" id="Features">
@@ -202,11 +346,15 @@ font-size: 25px;
 <p>Secure Information</p>
     </div>
 </div>
-<div class="FAQ" id="FAQ">
+<div class="FAQ" id="Faq">
     <div class="text-title-4">
         <h2>FAQ</h2>
     </div>
-</div>
+</div><br>
+<div class="arrow">
+    <a href="#"><i>&#x2191;</i></a>
+    <p>Back to Top</p>
+</div><br>
 <div class="footer">
     <footer>
         Copyright&copy;&nbsp;All&nbsp;rights&nbsp;Reserved
