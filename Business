@@ -139,7 +139,7 @@ font-size: 25px;
                     <a class="nav-link" href="#Features" id="Area-3">Features</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" id="Area-3">FAQ&nbsp;</a>
+                  <a class="nav-link" href="#FAQ" id="Area-3">FAQ&nbsp;</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#" id="Area-4">Get&nbsp;Started</a>
