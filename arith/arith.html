@@ -1,0 +1,150 @@
+<html>
+<head>
+<link rel="icon" href="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/calculator-512.png">
+  <title>ARITHMETIC SEQUENCE</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+  }
+    #errorMessage{
+      background-color: #F5F5DC;
+      padding: 5px;
+      border: red solid 1px;
+      display: none;
+      
+    }
+    .content{
+    display:block ;
+    position: absolute;
+    background-color:#F7F9EF;
+    padding: 30px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 50%;
+    height: 350px;
+    min-height: 350px;
+    }
+    input[type=number]{
+    width: 100%;
+    padding: 5px;
+    height: 12%;
+    margin-bottom: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    }
+    .buttonSubmit{
+width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 15px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  font-family: 'Lora', serif;
+    }
+    label {
+      font-size: 15px;
+      font-family: 'Lora', serif;
+    }
+    #solution {
+      display: none;
+    }
+    .content .container-header {
+        justify-content: center;
+        display: flex;
+        font-family: 'Lora', serif;
+    }
+    .container-body {
+        justify-content: center;
+        display: flex;
+        font-family: 'Lora', serif;
+    }
+  </style>
+</head>
+<body>
+    <!-- JL Romero Juanitas -->
+    <!-- Renz Abellanosa Aggabao -->
+  <div class="content">
+  <h3 class="container-header">ARITHMETIC SEQUENCE</h3>
+  <h5 class="container-body">Find the N<sub>nth</sub> Term</h5>
+  <br>
+  <font color="red" id="errorMessage"></font>
+  <br>
+  <div class="field" id="field">
+  <label>N<sub>nth</sub>=&nbsp;Nth Term</label>
+  <input type="number" placeholder="Nth Term" id="n" required/><br>
+  <label>N<sub>1</sub>=1st Term</label>
+  <input type="number" placeholder="First Term" id="n1" required/><br>
+  <label>D&nbsp;=&nbsp;Common Difference</label>
+  <input type="number" placeholder="Common Difference" id="d" required/><br>
+    <button onClick="calculate()" class="buttonSubmit">CALCULATE</button>
+  </div>
+  <div id="solution">
+   <h5>SOLUTION</h5>
+   <p id="steps1"></p>
+   <p id="steps2"></p>
+   <p id="steps3"></p>
+   <p id="steps4"></p>
+   <br>
+  <button onClick="retry()" class="buttonSubmit">RETRY</button>
+  </div>
+  <script type="text/javascript">
+  //nth term
+  const n = document.getElementById("n");
+  //first term
+  const n1 = document.getElementById("n1");
+  //common difference
+  const d = document.getElementById("d");
+  const msg = document.getElementById("errorMessage");
+  const s1 = document.getElementById("steps1");
+  const s2 = document.getElementById("steps2");
+  const s3 = document.getElementById("steps3");
+  const s4 = document.getElementById("steps4");
+  const content = document.getElementById('field')
+  const answer = document.getElementById('solution')
+  function calculate(){
+    if( n.value.length == 0 || n.value.length == 0 || n1.value.length == 0){
+      console.log("Error")
+      msg.innerHTML = "ALL FIELDS ARE REQUIRED!"
+      msg.style.display = "block"
+    }else{
+      let step1 = Number(n.value) - 1
+      let step2 = step1 * Number(d.value)
+      let step3 = Number(n1.value) + step2
+      console.log("Answer:" +step3)
+      msg.innerHTML = ""
+      msg.style.display = "none"
+      s1.innerHTML = "n<sub>"+n.value+"</sub>="+n1.value+"+("+n.value+"-1)"+d.value
+      s2.innerHTML = "n<sub>"+n.value+"</sub>="+n1.value+"+("+step1+")"+d.value
+      s3.innerHTML = "n<sub>"+n.value+"</sub>="+n1.value+"+"+step2
+      s4.innerHTML = "n<sub>"+n.value+"</sub>="+step3
+      content.style.display = "none"
+      answer.style.display = "block"
+    }
+  }
+  function retry(){
+    console.log("Retry")
+    content.style.display = "block"
+    answer.style.display = "none"
+    n.value = ""
+    n1.value = ""
+    d.value = ""
+  }
+  </script>
+  </div>
+</body>
+
+</html>
