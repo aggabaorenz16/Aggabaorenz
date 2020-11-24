@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin: 0px;
+  }
+      .content{
+    display:block ;
+  position: absolute;
+  background-color:#F7F9EF;
+  padding: 30px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  width: 50%;
+  height: 350px;
+  min-height: 350px;
+  }
+  input[type=number]{
+  width: 100%;
+  padding: 5px 10px; 
+  margin-bottom: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  height: 10%;
+  }
+ #errorMessage{
+    background-color: #F5F5DC;
+    padding: 5px;
+    border: red solid 1px;
+    display: none;
+    
+  }
+     .buttonSubmit{
+width: 100%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin-bottom: 8px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+border-radius: 5px;
+  }
+  #solution{
+    display: none;
+  }
+  h3 {
+      display: flex;
+      justify-content: center;
+  }
+  h4 {
+      display: flex;
+      justify-content: center;
+  }
