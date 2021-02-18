@@ -318,9 +318,72 @@ font-size: 21px;
 /* RESPONSIVE */ 
 
 /* Large */ 
-/* @media (max-width: 992px) and (min-width: 767px) { }*/
+@media (max-width: 992px) and (min-width: 576px) { 
+    .desktop {
+        display: block;
+    }
+    .navbar-side .icon {
+        grid-column: 3/4;
+        place-items: center;
+        display: grid;
+    }
+    .navbar-side .icon i {
+        font-size: 23px;
+    }
+    .navbar-side .icon i:hover {
+        cursor: pointer;
+        color: white;
+    }
+    .navbar-side .menu-container {
+        position: fixed;
+        height: 200px;
+        background-color: red;
+        width: 100vw;
+        top: 55px;
+        grid-auto-flow: row;
+       grid-auto-rows: 50px;
+       grid-auto-columns: 1fr;
+       align-self: unset;
+       font-size: 23px;
+       background-color: rgba(0, 0, 0, 0.35);
+       transition: height 0.5s ease-in;
+    }
+    .navbar-side .menu-container li {
+       display: grid;
+    align-items: center;
+    }
+    .navbar-side .menu-container li:hover {
+        cursor: pointer;
+        color: white;
+    }
+    .navbar-side .menu-container.hide {
+        height: 0px;
+        display: none;
+    }
+    
+    .navbar-side .menu-container.show {
+        height: 200px;
+    }
+    .menu-container i {
+        position: fixed;
+        left: 36%;
+    }
+    .Vegetable {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        background-color: #EDCCC5;
+      padding: 10px;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.795);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+}
 /* Memium */ 
-@media (max-width: 768px) and (min-width: 576px) {
+@media (max-width: 578px) and (min-width: 320px) {
     .desktop {
         display: block;
     }
@@ -385,9 +448,9 @@ font-size: 21px;
       }
 }
 /* Small */ 
-@media (max-width: 578px)  {
+@media (max-width: 321px) {
     .desktop {
-        display: block;
+        display: none;
     }
     .navbar-side .icon {
         grid-column: 3/4;
@@ -427,7 +490,6 @@ font-size: 21px;
         height: 0px;
         display: none;
         }
-    
     .navbar-side .menu-container.show {
         height: 200px;
     }
@@ -437,7 +499,7 @@ font-size: 21px;
     }
     .Vegetable {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: repeat(1, auto);
         background-color: #EDCCC5;
       padding: 10px;
     }
