@@ -4,6 +4,7 @@ html, body {
     background-color: #EDCCC5;
 font-family: 'Poppins', sans-serif;
 scroll-behavior: smooth;
+overflow-x : hidden;
 }
 /* HIDE */
 .desktop {
