@@ -112,3 +112,8 @@
   font-size: 20px;
   border: 1px solid black;
 }
+
+* .grid-item:hover {
+  background-color: #c0450b;
+  color: white;
+}
