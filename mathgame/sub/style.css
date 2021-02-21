@@ -82,11 +82,7 @@
 }
 
 * footer {
-  /* background-color: black; */
   text-align: center;
-  color: black;
-  height: 230px;
-  padding: 20px;
   font-size: 23px;
 }
 
@@ -117,4 +113,19 @@
   background-color: #c0450b;
   color: white;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 574px) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .box {
+    width: 250px;
+    margin-left: 10%;
+  }
+  p {
+    text-align: center;
+  }
+}
