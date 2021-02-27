@@ -524,7 +524,7 @@ color: #FFFBFB;
         grid-template-columns: repeat(1, auto);
         }
         .home-container h2 {
-            font-size: 40px;
+            font-size: 30px;
             text-align: center;
         }
         .home-container h1 {
@@ -539,7 +539,7 @@ color: #FFFBFB;
             place-items: center;
             padding: 5px;
             margin: 50px;
-            margin-left: 90px;
+            margin-left: 75px;
         }
         .home-container .btn-hire {
             display: flex;
@@ -549,7 +549,7 @@ color: #FFFBFB;
             place-items: center;
             padding: 5px;
             margin: 50px;
-            margin-left: 90px;
+            margin-left: 75px;
         }
         .grid-project {
             display: grid;
